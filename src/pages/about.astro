@@ -1,7 +1,18 @@
 ---
+import CustomTitle from '../components/CustomTitle.astro';
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 <MainLayout title="About Page">
   <h1>About</h1>
+  <CustomTitle title="This is a custom title" />
 </MainLayout>
+
+<!-- El is:global se usa para aplicar los estilos a todos los componentes usados en la página -->
+<!-- <style is:global> -->
+<style>
+  /* Estilo en Scope */
+  h1 {
+    color: red;
+  }
+</style>
