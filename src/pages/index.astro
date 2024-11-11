@@ -3,7 +3,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 // Server Only
 const name = 'Diego Alejandro Urrego Gamboa';
-const title = 'Home Page';
 ---
 
 <MainLayout title="Home Page">
@@ -16,8 +15,6 @@ const title = 'Home Page';
     const currentTime = document.querySelector(
       '#current-time'
     ) as HTMLParagraphElement;
-
-    const currentYear: number = new Date().getFullYear();
 
     currentTime.innerText = `Momento actual real: ${new Date().toLocaleTimeString()}`;
   </script>
